@@ -133,5 +133,5 @@ extra_javascript:
 nav:
   - 🏠首页: index.md
   - 📝排版: 
-    - Markdown: mdgrammar.md
-    - LateX数学公式: latex_math.md
+    - Markdown: layout/mdgrammar.md
+    - LateX数学公式: layout/latex_math.md
