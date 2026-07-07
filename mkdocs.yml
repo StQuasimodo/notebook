@@ -1,0 +1,137 @@
+# ============================================================
+# 1. 站点基本信息（必填，替换成你自己的）
+# ============================================================
+site_name: "StQuasimodo的笔记本"                      # 网站标题，显示在浏览器标签和导航栏
+site_url: "https://StQuasimodo.github.io/StQuasimodo-s_notebook"     # 最终部署后的访问地址
+site_author: "StQuasimodo"                      # 作者名
+site_description: "个人学习笔记，记录 CS 相关内容"  # 网站描述，用于 SEO
+
+# ============================================================
+# 2. 版权与仓库信息
+# ============================================================
+copyright: 'Copyright &copy; 2026 <a href="https://github.com/StQuasimodo">StQuasimodo</a>'
+repo_url: https://github.com/StQuasimodo/StQuasimodo-s_notebook   # 源码仓库地址
+repo_name: StQuasimodo/StQuasimodo-s_notebook                     # 仓库显示名称
+edit_uri: blob/main/docs/                          # "编辑此页" 指向的路径
+use_directory_urls: false                          # 让图片相对路径正常工作
+
+# ============================================================
+# 3. 主题配置（核心外观，推荐 Material）
+# ============================================================
+theme:
+  name: material                                  # 使用 Material 主题
+  language: zh                                    # 界面语言：中文
+  favicon: assets/favicon.png                     # 浏览器标签页图标
+  logo: material/notebook-multiple                # 左上角 Logo 图标
+  features:                                       # 开启的功能特性
+    # --- 导航相关 ---
+    - navigation.tabs                             # 顶层标签式导航
+    - navigation.path                             # 显示当前页面路径
+    - navigation.top                              # 返回顶部按钮
+    - navigation.footer                           # 页面底部上一页/下一页
+    - navigation.indexes                          # 章节索引页支持
+    - navigation.tracking                         # 滚动时高亮左侧导航
+    # --- 内容相关 ---
+    - content.code.copy                           # 代码块右上角复制按钮
+    - content.code.annotate                       # 代码块注释支持
+    - content.action.edit                         # 页面右上角"编辑此页"链接
+    # --- 搜索相关 ---
+    - search.share                                # 搜索结果可分享
+  
+  # 字体配置（参考了美观的搭配）
+  font:
+    text: "JetBrains Mono, LXGW WenKai Screen, sans-serif"
+    code: "JetBrains Mono, Consolas, monospace"
+  
+  # 明暗主题自动切换（根据系统偏好）
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+
+# ============================================================
+# 4. 插件（按需增减，search 是必须的）
+# ============================================================
+plugins:
+  - search                                      # 搜索功能（必选）
+  - git-revision-date-localized:               # 显示文件最后修改时间
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      fallback_to_build_date: true
+  - rss:                                       # 生成 RSS 订阅
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
+
+# ============================================================
+# 5. Markdown 扩展（让写作更舒服，建议保留）
+# ============================================================
+markdown_extensions:
+  # --- 基础增强 ---
+  - admonition                                  # 提示框 (!!! note)
+  - footnotes                                   # 脚注支持
+  - attr_list                                   # 为图片/链接添加属性
+  - md_in_html                                  # 在 HTML 块内使用 Markdown
+  - toc:
+      permalink: ⚓︎                             # 标题旁的永久链接符号
+      title: 目录
+  
+  # --- PyMdown 扩展（功能丰富） ---
+  - pymdownx.details                            # 折叠块 (???)
+  - pymdownx.superfences                        # 嵌套代码块
+  - pymdownx.tabbed:
+      alternate_style: true                     # 选项卡样式
+  - pymdownx.tasklist:
+      custom_checkbox: true                     # 任务列表 [x]
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true                             # 数学公式 (LaTeX)
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite                       # 行内代码高亮
+  - pymdownx.snippets                           # 代码片段复用
+  - pymdownx.caret                              # 上标 ^^
+  - pymdownx.mark                               # 高亮 ==
+  - pymdownx.tilde                              # 下标 ~~
+
+# ============================================================
+# 6. 社交链接（显示在页面右上角）
+# ============================================================
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/StQuasimodo
+    - icon: fontawesome/solid/home
+      link: https://StQuasimodo.github.io
+
+
+# ============================================================
+# 7. 额外样式和脚本（按需添加）
+# ============================================================
+extra_css:
+  - css/custom.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+
+extra_javascript:
+  - js/custom.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+
+# ============================================================
+# 8. 导航结构（这是你的笔记骨架，按实际修改！）
+# ============================================================
+nav:
+  - 🏠首页: index.md
+  - 📝排版: 
+    - Markdown: mdgrammar.md
+    - LateX数学公式: latex_math.md
