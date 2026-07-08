@@ -20,6 +20,8 @@
 <link href="../css/timeline.css" rel="stylesheet"/>
 <link href="../css/custom.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css" rel="stylesheet"/>
+<link href="../css/counter.css" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -255,16 +257,7 @@
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
       
-        一、 公式输入基础
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#greek-letters">
-<span class="md-ellipsis">
-      
-        二、 希腊字母 (Greek Letters)
+        公式输入基础
       
     </span>
 </a>
@@ -273,7 +266,7 @@
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
       
-        三、 上标、下标、根号与分式
+        希腊字母
       
     </span>
 </a>
@@ -282,7 +275,7 @@
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
       
-        四、 运算符与数学符号
+        上标、下标、根号与分式
       
     </span>
 </a>
@@ -291,34 +284,7 @@
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
       
-        五、 括号与大型运算符
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#matrices">
-<span class="md-ellipsis">
-      
-        六、 矩阵 (Matrices)
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cases">
-<span class="md-ellipsis">
-      
-        七、 方程组与分段函数 (Cases)
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#aligned">
-<span class="md-ellipsis">
-      
-        八、 公式对齐 (Aligned)
+        运算符与数学符号
       
     </span>
 </a>
@@ -327,7 +293,7 @@
 <a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
       
-        九、 字体修饰与空格
+        括号与大型运算符
       
     </span>
 </a>
@@ -336,13 +302,49 @@
 <a class="md-nav__link" href="#_6">
 <span class="md-ellipsis">
       
-        十、 常用箭头
+        矩阵
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        方程组与分段函数
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        公式对齐
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        字体修饰与空格
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        常用箭头
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
 <span class="md-ellipsis">
       
         💡 小贴士
@@ -374,16 +376,7 @@
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
       
-        一、 公式输入基础
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#greek-letters">
-<span class="md-ellipsis">
-      
-        二、 希腊字母 (Greek Letters)
+        公式输入基础
       
     </span>
 </a>
@@ -392,7 +385,7 @@
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
       
-        三、 上标、下标、根号与分式
+        希腊字母
       
     </span>
 </a>
@@ -401,7 +394,7 @@
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
       
-        四、 运算符与数学符号
+        上标、下标、根号与分式
       
     </span>
 </a>
@@ -410,34 +403,7 @@
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
       
-        五、 括号与大型运算符
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#matrices">
-<span class="md-ellipsis">
-      
-        六、 矩阵 (Matrices)
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cases">
-<span class="md-ellipsis">
-      
-        七、 方程组与分段函数 (Cases)
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#aligned">
-<span class="md-ellipsis">
-      
-        八、 公式对齐 (Aligned)
+        运算符与数学符号
       
     </span>
 </a>
@@ -446,7 +412,7 @@
 <a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
       
-        九、 字体修饰与空格
+        括号与大型运算符
       
     </span>
 </a>
@@ -455,13 +421,49 @@
 <a class="md-nav__link" href="#_6">
 <span class="md-ellipsis">
       
-        十、 常用箭头
+        矩阵
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        方程组与分段函数
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        公式对齐
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        字体修饰与空格
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        常用箭头
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
 <span class="md-ellipsis">
       
         💡 小贴士
@@ -498,15 +500,15 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
 </a>
 <h1 id="latex"><span>LateX<span class="heti-spacing"> </span></span>数学公式<a class="headerlink" href="#latex" title="Permanent link">⚓︎</a></h1>
-<div class="statistics">
-<p>📝 字数：</p>
+<div class="custom-statistics">
+<p>📝 字数：773</p>
 <p>⌨️ 代码：<span>22<span class="heti-spacing"> </span></span>行</p>
-<p>⏱️ 阅读时长： 分钟</p>
+<p>⏱️ 阅读时长：<span>4<span class="heti-spacing"> </span></span>分钟</p>
 </div>
 <p>在<span class="heti-skip"><span class="heti-spacing"> </span>Markdown<span class="heti-spacing"> </span></span>中使用<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>数学公式，通常是通过数学插件（如<span class="heti-skip"><span class="heti-spacing"> </span>MathJax<span class="heti-spacing"> </span></span>或<span><span class="heti-spacing"> </span>KaTeX</span>）实现的。绝大多数<span class="heti-skip"><span class="heti-spacing"> </span>Markdown<span class="heti-spacing"> </span></span>编辑器（如<span><span class="heti-spacing"> </span>Typora, Obsidian, VS Code, GitHub</span>）都支持这种语法。</p>
 <p>以下是<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>数学公式的<strong>全能指南</strong>，按分类整理，方便查找。</p>
 <hr/>
-<h3 id="_1">一、 公式输入基础<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h3>
+<h3 id="_1">公式输入基础<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li><strong>行内公式<span><span class="heti-spacing"> </span>(Inline Math)</span></strong>：用一对 <code>$</code> 包裹。<ul>
 <li>语法：<code>$E=mc^2$</code></li>
@@ -521,7 +523,7 @@
 </li>
 </ol>
 <hr/>
-<h3 id="greek-letters">二、 希腊字母<span><span class="heti-spacing"> </span>(Greek Letters)</span><a class="headerlink" href="#greek-letters" title="Permanent link">⚓︎</a></h3>
+<h3 id="_2">希腊字母<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h3>
 <table>
 <thead>
 <tr>
@@ -568,19 +570,19 @@
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\lambda\)</span></td>
-<td style="text-align: left;"><code>\lambda$ | $\mu$ |</code>\mu<code>| $\Xi$ |</code>\Xi`</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>\lambda</code></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mu\)</span></td>
+<td style="text-align: left;"><code>\mu</code></td>
+<td style="text-align: left;"><span class="arithmatex">\(\Xi\)</span></td>
+<td style="text-align: left;"><code>\Xi</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\pi\)</span></td>
 <td style="text-align: left;"><code>\pi</code></td>
 <td style="text-align: left;"><span class="arithmatex">\(\rho\)</span></td>
-<td style="text-align: left;"><code>\rho$ | $\Pi$ |</code>\Pi`</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>\rho</code></td>
+<td style="text-align: left;"><span class="arithmatex">\(\Pi\)</span></td>
+<td style="text-align: left;"><code>\Pi</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\sigma\)</span></td>
@@ -588,7 +590,7 @@
 <td style="text-align: left;"><span class="arithmatex">\(\tau\)</span></td>
 <td style="text-align: left;"><code>\tau</code></td>
 <td style="text-align: left;"><span class="arithmatex">\(\Sigma\)</span></td>
-<td style="text-align: left;">`\Sigma$</td>
+<td style="text-align: left;"><code>\Sigma</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\phi\)</span></td>
@@ -600,16 +602,16 @@
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\omega\)</span></td>
-<td style="text-align: left;"><code>\omega$ | $\chi$ |</code>\chi<code>| $\Omega$ |</code>\Omega`</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>\omega</code></td>
+<td style="text-align: left;"><span class="arithmatex">\(\chi\)</span></td>
+<td style="text-align: left;"><code>\chi</code></td>
+<td style="text-align: left;"><span class="arithmatex">\(\Omega\)</span></td>
+<td style="text-align: left;"><code>\Omega</code></td>
 </tr>
 </tbody>
 </table>
 <hr/>
-<h3 id="_2">三、 上标、下标、根号与分式<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h3>
+<h3 id="_3">上标、下标、根号与分式<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li><strong>上下标</strong>：<ul>
 <li>上标：<code>x^2</code> <span class="arithmatex">\(\rightarrow x^2\)</span></li>
@@ -629,7 +631,7 @@
 </li>
 </ol>
 <hr/>
-<h3 id="_3">四、 运算符与数学符号<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
+<h3 id="_4">运算符与数学符号<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li><strong>算术运算</strong>：<ul>
 <li>乘法：<code>\times</code> (<span class="arithmatex">\(\times\)</span>)，<code>\cdot</code> (<span class="arithmatex">\(\cdot\)</span>)</li>
@@ -655,7 +657,7 @@
 </li>
 </ol>
 <hr/>
-<h3 id="_4">五、 括号与大型运算符<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
+<h3 id="_5">括号与大型运算符<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li><strong>自动调整大小的括号</strong>：<ul>
 <li>使用 <code>\left(</code> 和 <code>\right)</code>。</li>
@@ -672,7 +674,7 @@
 </li>
 </ol>
 <hr/>
-<h3 id="matrices">六、 矩阵<span><span class="heti-spacing"> </span>(Matrices)</span><a class="headerlink" href="#matrices" title="Permanent link">⚓︎</a></h3>
+<h3 id="_6">矩阵<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
 <p>使用 <code>\begin{matrix}</code> 环境。常用的有：
 *   <code>matrix</code> (无括号)
 *   <code>pmatrix</code> (圆括号 <code>()</code>)
@@ -686,10 +688,10 @@
 <a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nv">\end</span><span class="nb">{bmatrix}</span>
 <a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="s">$$</span>
 </code></pre></div>
-渲染为：
-$<span class="arithmatex">\(\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\)</span>$<p></p>
+渲染为：<p></p>
+<div class="arithmatex">\[\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\]</div>
 <hr/>
-<h3 id="cases">七、 方程组与分段函数<span><span class="heti-spacing"> </span>(Cases)</span><a class="headerlink" href="#cases" title="Permanent link">⚓︎</a></h3>
+<h3 id="_7">方程组与分段函数<a class="headerlink" href="#_7" title="Permanent link">⚓︎</a></h3>
 <p>使用 <code>cases</code> 环境：
 </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="sb">$$</span>
 <a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nb">f</span><span class="o">(</span><span class="nb">n</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span>
@@ -699,10 +701,10 @@ $<span class="arithmatex">\(\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp;
 <a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="nv">\end</span><span class="nb">{cases}</span>
 <a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="s">$$</span>
 </code></pre></div>
-渲染为：
-$<span class="arithmatex">\(f(n) = \begin{cases} n/2, &amp; \text{if } n \text{ is even} \\ 3n+1, &amp; \text{if } n \text{ is odd} \end{cases}\)</span>$<p></p>
+渲染为：<p></p>
+<div class="arithmatex">\[f(n) = \begin{cases} n/2, &amp; \text{if } n \text{ is even} \\ 3n+1, &amp; \text{if } n \text{ is odd} \end{cases}\]</div>
 <hr/>
-<h3 id="aligned">八、 公式对齐<span><span class="heti-spacing"> </span>(Aligned)</span><a class="headerlink" href="#aligned" title="Permanent link">⚓︎</a></h3>
+<h3 id="_8">公式对齐<a class="headerlink" href="#_8" title="Permanent link">⚓︎</a></h3>
 <p>当需要写很长的推导过程且需要等号对齐时，使用 <code>aligned</code> 环境，并在对齐点放置 <code>&amp;</code>。
 </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="sb">$$</span>
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nv">\begin</span><span class="nb">{aligned}</span>
@@ -712,10 +714,10 @@ $<span class="arithmatex">\(f(n) = \begin{cases} n/2, &amp; \text{if } n \text{ 
 <a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="nv">\end</span><span class="nb">{aligned}</span>
 <a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="s">$$</span>
 </code></pre></div>
-渲染为：
-$<span class="arithmatex">\(\begin{aligned} (a+b)^2 &amp;= (a+b)(a+b) \\ &amp;= a^2 + ab + ba + b^2 \\ &amp;= a^2 + 2ab + b^2 \end{aligned}\)</span>$<p></p>
+渲染为：<p></p>
+<div class="arithmatex">\[\begin{aligned} (a+b)^2 &amp;= (a+b)(a+b) \\ &amp;= a^2 + ab + ba + b^2 \\ &amp;= a^2 + 2ab + b^2 \end{aligned}\]</div>
 <hr/>
-<h3 id="_5">九、 字体修饰与空格<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
+<h3 id="_9">字体修饰与空格<a class="headerlink" href="#_9" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li><strong>字体样式</strong>：<ul>
 <li>数学正体：<code>\mathrm{text}</code> <span class="arithmatex">\(\rightarrow \mathrm{text}\)</span></li>
@@ -735,7 +737,7 @@ $<span class="arithmatex">\(\begin{aligned} (a+b)^2 &amp;= (a+b)(a+b) \\ &amp;= 
 </li>
 </ol>
 <hr/>
-<h3 id="_6">十、 常用箭头<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
+<h3 id="_10">常用箭头<a class="headerlink" href="#_10" title="Permanent link">⚓︎</a></h3>
 <table>
 <thead>
 <tr>
@@ -754,9 +756,9 @@ $<span class="arithmatex">\(\begin{aligned} (a+b)^2 &amp;= (a+b)(a+b) \\ &amp;= 
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\gets\)</span></td>
-<td style="text-align: left;"><code>\gets$ | $\Leftarrow$ |</code>\Leftarrow`</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>\gets</code></td>
+<td style="text-align: left;"><span class="arithmatex">\(\Leftarrow\)</span></td>
+<td style="text-align: left;"><code>\Leftarrow</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\leftrightarrow\)</span></td>
@@ -773,7 +775,7 @@ $<span class="arithmatex">\(\begin{aligned} (a+b)^2 &amp;= (a+b)(a+b) \\ &amp;= 
 </tbody>
 </table>
 <hr/>
-<h3 id="_7">💡 小贴士<a class="headerlink" href="#_7" title="Permanent link">⚓︎</a></h3>
+<h3 id="_11">💡 小贴士<a class="headerlink" href="#_11" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><strong>在线调试</strong>：如果不确定语法，可以在<a href="https://editor.codecogs.com/"><span class="heti-skip"><span class="heti-spacing"> </span>codecogs<span class="heti-spacing"> </span></span></a>或<a href="https://www.overleaf.com/"><span class="heti-skip"><span class="heti-spacing"> </span>Overleaf<span class="heti-spacing"> </span></span></a>上实时预览。</li>
 <li><strong>转义符号</strong>：如果想在数学公式里显示 <code>$</code>，请使用 <code>\$</code>。</li>
@@ -850,6 +852,8 @@ $<span class="arithmatex">\(\begin{aligned} (a+b)^2 &amp;= (a+b)(a+b) \\ &amp;= 
 <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../js/custom.js"></script>
 <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+<script src="../js/mathjax.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(()=>{ lightbox.reload(); });
 </script></body></html>

@@ -1,0 +1,38 @@
+/* docs/stylesheets/extra.css */
+
+/* 基础样式：作用于统计信息容器 */
+.custom-statistics {
+    /* 字体设置 */
+    font-family: "JetBrains Mono", "LXGW WenKai Screen", sans-serif;
+    font-size: 0.7rem;
+
+    /* 颜色设置（这里是淡蓝色，你可以换成任意颜色） */
+    color: #abbff7; /* 深蓝色文字 */
+
+    /* 背景色和内边距，让内容更舒适 */
+    background-color: #002236; /* 淡蓝色背景 */
+    padding: 10px 20px;
+
+    /* 圆角边框 */
+    border-radius: 8px;
+
+    /* 添加边框（左边框强调色） */
+    border-left: 4px solid #3b82f6; /* 蓝色左边框 */
+
+    /* 加一个微弱的阴影，更有立体感 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    /* 下边距，与正文保持距离 */
+    margin-bottom: 20px;
+}
+
+/* 如果你想让每行统计信息更紧凑，可以这样调整段落间距 */
+.custom-statistics p {
+    margin: 4px 0;
+}
+
+/* 如果想给数字或特定文字加粗或改变颜色，可以用这个例子 */
+.custom-statistics p span.highlight {
+    font-weight: bold;
+    color: #2563eb; /* 亮蓝色 */
+}
