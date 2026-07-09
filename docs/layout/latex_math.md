@@ -1,10 +1,15 @@
+---
+counter: true
+---
+
+# LateX数学公式
 在 Markdown 中使用 LaTeX 数学公式，通常是通过数学插件（如 MathJax 或 KaTeX）实现的。绝大多数 Markdown 编辑器（如 Typora, Obsidian, VS Code, GitHub）都支持这种语法。
 
 以下是 LaTeX 数学公式的**全能指南**，按分类整理，方便查找。
 
 ---
 
-### 一、 公式输入基础
+### 公式输入基础
 
 1.  **行内公式 (Inline Math)**：用一对 `$` 包裹。
     *   语法：`$E=mc^2$`
@@ -17,7 +22,7 @@
 
 ---
 
-### 二、 希腊字母 (Greek Letters)
+### 希腊字母
 
 | 字符 | 语法 | 字符 | 语法 | 大写 | 语法 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -25,15 +30,15 @@
 | $\gamma$ | `\gamma` | $\delta$ | `\delta` | $\Delta$ | `\Delta` |
 | $\epsilon$ | `\epsilon` | $\zeta$ | `\zeta` | $\Theta$ | `\Theta` |
 | $\eta$ | `\eta` | $\theta$ | `\theta` | $\Lambda$ | `\Lambda` |
-| $\lambda$ | `\lambda$ | $\mu$ | `\mu` | $\Xi$ | `\Xi` |
-| $\pi$ | `\pi` | $\rho$ | `\rho$ | $\Pi$ | `\Pi` |
-| $\sigma$ | `\sigma` | $\tau$ | `\tau` | $\Sigma$ | `\Sigma$ |
+| $\lambda$ | `\lambda` | $\mu$ | `\mu` | $\Xi$ | `\Xi` |
+| $\pi$ | `\pi` | $\rho$ | `\rho` | $\Pi$ | `\Pi` |
+| $\sigma$ | `\sigma` | $\tau$ | `\tau` | $\Sigma$ | `\Sigma` |
 | $\phi$ | `\phi` | $\psi$ | `\psi` | $\Phi$ | `\Phi` |
-| $\omega$ | `\omega$ | $\chi$ | `\chi` | $\Omega$ | `\Omega` |
+| $\omega$ | `\omega` | $\chi$ | `\chi` | $\Omega$ | `\Omega` |
 
 ---
 
-### 三、 上标、下标、根号与分式
+### 上标、下标、根号与分式
 
 1.  **上下标**：
     *   上标：`x^2` $\rightarrow x^2$
@@ -48,7 +53,7 @@
 
 ---
 
-### 四、 运算符与数学符号
+### 运算符与数学符号
 
 1.  **算术运算**：
     *   乘法：`\times` ($\times$)，`\cdot` ($\cdot$)
@@ -69,7 +74,7 @@
 
 ---
 
-### 五、 括号与大型运算符
+### 括号与大型运算符
 
 1.  **自动调整大小的括号**：
     *   使用 `\left(` 和 `\right)`。
@@ -83,9 +88,10 @@
 
 ---
 
-### 六、 矩阵 (Matrices)
+### 矩阵
 
 使用 `\begin{matrix}` 环境。常用的有：
+
 *   `matrix` (无括号)
 *   `pmatrix` (圆括号 `()`)
 *   `bmatrix` (方括号 `[]`)
@@ -101,11 +107,12 @@ $$
 $$
 ```
 渲染为：
+
 $$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
 
 ---
 
-### 七、 方程组与分段函数 (Cases)
+### 方程组与分段函数
 
 使用 `cases` 环境：
 ```latex
@@ -118,11 +125,12 @@ n/2,  & \text{if } n \text{ is even} \\
 $$
 ```
 渲染为：
+
 $$f(n) = \begin{cases} n/2, & \text{if } n \text{ is even} \\ 3n+1, & \text{if } n \text{ is odd} \end{cases}$$
 
 ---
 
-### 八、 公式对齐 (Aligned)
+### 公式对齐
 
 当需要写很长的推导过程且需要等号对齐时，使用 `aligned` 环境，并在对齐点放置 `&`。
 ```latex
@@ -135,11 +143,12 @@ $$
 $$
 ```
 渲染为：
+
 $$\begin{aligned} (a+b)^2 &= (a+b)(a+b) \\ &= a^2 + ab + ba + b^2 \\ &= a^2 + 2ab + b^2 \end{aligned}$$
 
 ---
 
-### 九、 字体修饰与空格
+### 字体修饰与空格
 
 1.  **字体样式**：
     *   数学正体：`\mathrm{text}` $\rightarrow \mathrm{text}$
@@ -154,12 +163,12 @@ $$\begin{aligned} (a+b)^2 &= (a+b)(a+b) \\ &= a^2 + ab + ba + b^2 \\ &= a^2 + 2a
 
 ---
 
-### 十、 常用箭头
+### 常用箭头
 
 | 箭头 | 语法 | 箭头 | 语法 |
 | :--- | :--- | :--- | :--- |
 | $\to$ | `\to` 或 `\rightarrow` | $\Rightarrow$ | `\Rightarrow` |
-| $\gets$ | `\gets$ | $\Leftarrow$ | `\Leftarrow` |
+| $\gets$ | `\gets` | $\Leftarrow$ | `\Leftarrow` |
 | $\leftrightarrow$ | `\leftrightarrow` | $\Leftrightarrow$ | `\Leftrightarrow$ |
 | $\uparrow$ | `\uparrow` | $\downarrow$ | `\downarrow` |
 
