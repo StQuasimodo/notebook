@@ -7,10 +7,10 @@
     font-size: 0.7rem;
 
     /* 颜色设置（这里是淡蓝色，你可以换成任意颜色） */
-    color: #abbff7; /* 深蓝色文字 */
+    color: #abbff7; /* 浅蓝色文字 */
 
     /* 背景色和内边距，让内容更舒适 */
-    background-color: #002236; /* 淡蓝色背景 */
+    background-color: #002236; /* 深蓝色背景 */
     padding: 10px 20px;
 
     /* 圆角边框 */
