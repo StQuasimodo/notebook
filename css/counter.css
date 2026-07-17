@@ -1,38 +1,29 @@
-/* docs/stylesheets/extra.css */
-
-/* 基础样式：作用于统计信息容器 */
+/* ========== 统计信息卡片基础样式 ========== */
 .custom-statistics {
-    /* 字体设置 */
-    font-family: "JetBrains Mono", "LXGW WenKai Screen", sans-serif;
-    font-size: 0.7rem;
-
-    /* 颜色设置（这里是淡蓝色，你可以换成任意颜色） */
-    color: #abbff7; /* 浅蓝色文字 */
-
-    /* 背景色和内边距，让内容更舒适 */
-    background-color: #002236; /* 深蓝色背景 */
-    padding: 10px 20px;
-
-    /* 圆角边框 */
-    border-radius: 8px;
-
-    /* 添加边框（左边框强调色） */
-    border-left: 4px solid #3b82f6; /* 蓝色左边框 */
-
-    /* 加一个微弱的阴影，更有立体感 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-
-    /* 下边距，与正文保持距离 */
-    margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* 如果你想让每行统计信息更紧凑，可以这样调整段落间距 */
 .custom-statistics p {
-    margin: 4px 0;
+  margin: 4px 0;
 }
 
-/* 如果想给数字或特定文字加粗或改变颜色，可以用这个例子 */
-.custom-statistics p span.highlight {
-    font-weight: bold;
-    color: #2563eb; /* 亮蓝色 */
+/* ========== 亮色模式 ========== */
+[data-md-color-scheme="default"] .custom-statistics {
+  background-color: #c7ddf6;        /* 浅蓝背景 */
+  color: #1e3a8a;                   /* 深蓝文字 */
+  border-left-color: #3b82f6;       /* 蓝色左边框 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== 暗色模式 ========== */
+[data-md-color-scheme="slate"] .custom-statistics {
+  background-color: rgba(8, 3, 138, 0.06);  /* 半透明浅色背景 */
+  color: #d1d5db;                    /* 浅灰色文字 */
+  border-left-color: #6ca8a4;        /* 青绿色左边框（与你的强调色一致） */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
