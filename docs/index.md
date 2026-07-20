@@ -8,6 +8,31 @@ hide:
   /* ===== 粒子背景 ===== */
   #particleCanvas { position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.45; }
 
+  /* ===== 亮色模式 - 动态光斑背景 ===== */
+  .bg-blobs { position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;display:none; }
+  [data-md-color-scheme="default"] .bg-blobs { display:block; }
+  .bg-blobs span { position:absolute;border-radius:50%;filter:blur(80px);opacity:.35;animation:drift 20s ease-in-out infinite; }
+  .bg-blobs span:nth-child(1) { width:500px;height:500px;background:rgba(9,136,198,.12);
+    top:-15%;left:-10%;animation-delay:0s;animation-duration:22s; }
+  .bg-blobs span:nth-child(2) { width:400px;height:400px;background:rgba(56,182,255,.10);
+    bottom:-10%;right:-8%;animation-delay:-5s;animation-duration:24s; }
+  .bg-blobs span:nth-child(3) { width:350px;height:350px;background:rgba(9,136,198,.08);
+    top:40%;left:50%;animation-delay:-10s;animation-duration:18s; }
+  .bg-blobs span:nth-child(4) { width:280px;height:280px;background:rgba(100,180,255,.07);
+    top:20%;right:15%;animation-delay:-15s;animation-duration:26s; }
+  @keyframes drift {
+    0%,100% { transform:translate(0,0) scale(1); }
+    25% { transform:translate(60px,-40px) scale(1.15); }
+    50% { transform:translate(-30px,50px) scale(.9); }
+    75% { transform:translate(-50px,-30px) scale(1.1); }
+  }
+
+  /* ===== 亮色模式 - 微细网格纹理 ===== */
+  [data-md-color-scheme="default"] body { background-image:
+    radial-gradient(circle at 20% 50%, rgba(9,136,198,.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(9,136,198,.02) 0%, transparent 40%);
+    background-attachment:fixed; }
+
   /* ===== 容器 ===== */
   .hw { position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;
     max-width:700px;margin:0 auto;padding:1.2rem 1rem 2rem;min-height:calc(100vh - 96px);justify-content:center;gap:1rem; }
@@ -144,6 +169,7 @@ hide:
 </style>
 
 <canvas id="particleCanvas"></canvas>
+<div class="bg-blobs"><span></span><span></span><span></span><span></span></div>
 
 <div class="hw">
 
