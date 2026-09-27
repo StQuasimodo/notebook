@@ -46,12 +46,6 @@ hide:
   .ht { font-size:2rem;font-weight:800;letter-spacing:-.02em;margin:0 0 .2rem;line-height:1.15; }
   .ht span { display:block; }
   .ht .s { font-size:1.4rem;font-weight:600;opacity:.65; }
-  .hx { display:flex;align-items:center;justify-content:center;gap:.1rem;
-    font-family:"JetBrains Mono","Maple Mono",monospace;font-size:.82rem;height:1.3rem;margin-bottom:.4rem; }
-  .hx .p { opacity:.3; }
-  .hx .c { font-weight:300;animation:bl 1s step-end infinite; }
-  @keyframes bl { 0%,100%{opacity:1} 50%{opacity:0} }
-  .hd { font-size:.8rem;opacity:.45;margin:0 auto;max-width:360px;line-height:1.4;animation:fu .6s .12s both; }
 
   /* ===== 分割线 ===== */
   .hl { width:40px;height:1px;margin:0 auto;opacity:.12; }
@@ -104,8 +98,6 @@ hide:
   /* ===== 暗色 ===== */
   [data-md-color-scheme="slate"] .ha { background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08); }
   [data-md-color-scheme="slate"] .ht { color:#f0f0f0; }
-  [data-md-color-scheme="slate"] .hx,.hx .typing-text { color:rgba(255,255,255,.65); }
-  [data-md-color-scheme="slate"] .hd { color:rgba(255,255,255,.42); }
   [data-md-color-scheme="slate"] .hl { background:rgba(255,255,255,.25); }
   [data-md-color-scheme="slate"] .ncd { background:rgba(255,255,255,.022);border:1px solid rgba(255,255,255,.05)!important; }
   [data-md-color-scheme="slate"] .ncd:hover { background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15)!important;
@@ -129,8 +121,6 @@ hide:
   /* ===== 亮色 ===== */
   [data-md-color-scheme="default"] .ha { background:rgba(9,136,198,.04);border:1px solid rgba(9,136,198,.1); }
   [data-md-color-scheme="default"] .ht { color:#0d2137; }
-  [data-md-color-scheme="default"] .hx,.hx .typing-text { color:rgba(9,136,198,.7); }
-  [data-md-color-scheme="default"] .hd { color:rgba(0,0,0,.4); }
   [data-md-color-scheme="default"] .hl { background:rgba(9,136,198,.2); }
   [data-md-color-scheme="default"] .ncd { background:rgba(255,255,255,.65);border:1px solid rgba(9,136,198,.07)!important;
     box-shadow:0 1px 3px rgba(9,136,198,.03); }
@@ -177,9 +167,6 @@ hide:
   <div class="hh">
     <div class="ha">📓</div>
     <h1 class="ht"><span>StQuasimodo</span><span class="s">的学习笔记</span></h1>
-    <div class="hx">
-      <span class="p">#&nbsp;</span><span id="typingText" class="typing-text"></span><span class="c">|</span>
-    </div>
   </div>
 
   <!-- 分割线 -->
