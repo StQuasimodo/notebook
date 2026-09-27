@@ -180,7 +180,6 @@ hide:
     <div class="hx">
       <span class="p">#&nbsp;</span><span id="typingText" class="typing-text"></span><span class="c">|</span>
     </div>
-    <p class="hd">记录计算机科学学习路上的思考、实践与成长</p>
   </div>
 
   <!-- 分割线 -->
@@ -189,10 +188,10 @@ hide:
   <!-- 核心笔记 -->
   <div class="nc">
     <a href="layout/mdgrammar/" class="ncd">
-      <div class="ic">📐</div><div class="tx"><h3>Markdown 排版</h3><p>文档排版与写作指南</p></div><span class="ar">→</span>
+      <div class="ic">📐</div><div class="tx"><h3>Markdown 排版</h3></div><span class="ar">→</span>
     </a>
     <a href="layout/latex_math/" class="ncd">
-      <div class="ic">📊</div><div class="tx"><h3>LaTeX 数学公式</h3><p>代码书写优美公式</p></div><span class="ar">→</span>
+      <div class="ic">📊</div><div class="tx"><h3>LaTeX 数学公式</h3></div><span class="ar">→</span>
     </a>
   </div>
 
