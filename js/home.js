@@ -1,5 +1,5 @@
 /**
- * Homepage — 粒子背景 + 打字机 + 数据加载 + 卡片 tilt
+ * Homepage — 粒子背景 + 数据加载 + 卡片 tilt
  */
 (function () {
   "use strict";
@@ -68,30 +68,7 @@
   resize(); create(); draw();
 
   /* ============================================================
-     2. 打字机
-     ============================================================ */
-  var el = document.getElementById("typingText");
-  if (el) {
-    var phrases = [
-      "记录 CS 学习的点点滴滴 ✨",
-      "探索算法与数据结构的奥秘 🔍",
-      "分享编程技巧与最佳实践 💡",
-      "构建属于自己的知识体系 🧠",
-    ];
-    var pi = 0, ci = 0, del = false, sp = 100;
-    function type() {
-      var cur = phrases[pi];
-      if (del) { el.textContent = cur.substring(0, ci - 1); ci--; sp = 35; }
-      else { el.textContent = cur.substring(0, ci + 1); ci++; sp = 90 + Math.random() * 50; }
-      if (!del && ci === cur.length) { sp = 2000; del = true; }
-      else if (del && ci === 0) { del = false; pi = (pi + 1) % phrases.length; sp = 400; }
-      setTimeout(type, sp);
-    }
-    setTimeout(type, 500);
-  }
-
-  /* ============================================================
-     3. 加载数据：feed_json_updated.json
+     2. 加载数据：feed_json_updated.json
      ============================================================ */
   function loadData() {
     fetch("feed_json_updated.json")
@@ -219,7 +196,7 @@
   loadData();
 
   /* ============================================================
-     4. 卡片 tilt（桌面端）
+     3. 卡片 tilt（桌面端）
      ============================================================ */
   if (window.matchMedia("(pointer: fine)").matches) {
     var cards = document.querySelectorAll(".ncd, .hw-rand");
